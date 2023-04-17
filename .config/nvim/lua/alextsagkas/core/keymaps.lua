@@ -51,6 +51,22 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
 keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
+-- buffer management
+keymap.set("n", "<leader>bx", ":Bdelete<CR>") -- close current buffer
+keymap.set("n", "<leader>bn", ":bnext<CR>") --  go to next buffer
+keymap.set("n", "<leader>bp", ":bprev<CR>") --  go to previous buffer
+-- go to specific buffer
+vim.cmd([[nnoremap <silent><leader>1 <cmd>lua require("bufferline").go_to_buffer(1, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>2 <cmd>lua require("bufferline").go_to_buffer(2, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>3 <cmd>lua require("bufferline").go_to_buffer(3, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>4 <cmd>lua require("bufferline").go_to_buffer(4, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>5 <cmd>lua require("bufferline").go_to_buffer(5, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>6 <cmd>lua require("bufferline").go_to_buffer(6, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>7 <cmd>lua require("bufferline").go_to_buffer(7, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>8 <cmd>lua require("bufferline").go_to_buffer(8, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>9 <cmd>lua require("bufferline").go_to_buffer(9, true)<cr>]])
+vim.cmd([[nnoremap <silent><leader>$ <cmd>lua require("bufferline").go_to_buffer(-1, true)<cr>]])
+
 -- delete to void register
 keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 

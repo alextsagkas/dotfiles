@@ -59,13 +59,7 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 
 	-- file explorer
-	use({
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v2.x",
-		requires = {
-			"MunifTanjim/nui.nvim",
-		},
-	})
+	use("nvim-tree/nvim-tree.lua")
 
 	-- telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- better sorting performance
@@ -165,6 +159,12 @@ return packer.startup(function(use)
 
 	-- hightlight colors
 	use("brenoprata10/nvim-highlight-colors")
+
+	-- buffer line
+	use("akinsho/nvim-bufferline.lua")
+
+	-- buffer delete
+	use("moll/vim-bbye")
 
 	-- automatically set up your configuration after cloning packer.nvim
 	if packer_bootstrap then
