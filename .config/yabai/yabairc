@@ -32,5 +32,7 @@ yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add app="^Messages$" manage=off
 yabai -m rule --add app="^Notes$" manage=off
 yabai -m rule --add app="^Bartender 4$" manage=off
+yabai -m rule --add app="^Texpad$" manage=off
+yabai -m rule --add app="^Texifier$" manage=off
 
 echo "yabai configuration loaded"
