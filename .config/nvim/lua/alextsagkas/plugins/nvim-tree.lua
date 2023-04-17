@@ -6,6 +6,7 @@ end
 
 -- keymaps
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>rt", ":NvimTreeRefresh<CR>")
 
 -- setup
 nvimtree.setup({
