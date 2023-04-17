@@ -33,10 +33,7 @@ vim.keymap.set("n", "<leader>ft", function()
 	builtin.grep_string({ search = vim.fn.input("Grep > ") })
 end)
 vim.keymap.set("n", "<leader>fc", function()
-	require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-		winblend = 10,
-		previewer = false,
-	}))
+	builtin.current_buffer_fuzzy_find()
 end, { desc = "[/] Fuzzily search in current buffer" })
 
 telescope.load_extension("fzf")
