@@ -1,6 +1,12 @@
 -- node path
 vim.cmd([[let g:coc_node_path = '/usr/local/n/versions/node/18.9.0/bin/node']])
 
+-- spelling
+vim.cmd([[autocmd FileType * hi SpellBad cterm=underline ctermfg=203 guifg=#ff5f5f]])
+vim.cmd([[autocmd FileType * hi SpellLocal cterm=underline ctermfg=203 guifg=#ff5f5f]])
+vim.cmd([[autocmd FileType * hi SpellRare cterm=underline ctermfg=203 guifg=#ff5f5f]])
+vim.cmd([[autocmd FileType * hi SpellCap cterm=underline ctermfg=203 guifg=#ff5f5f]])
+
 -- remove automatic commenting
 vim.cmd([[autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o]])
 
