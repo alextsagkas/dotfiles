@@ -35,5 +35,8 @@ yabai -m rule --add app="^Bartender 4$" manage=off
 yabai -m rule --add app="^Texpad$" manage=off
 yabai -m rule --add app="^Texifier$" manage=off
 yabai -m rule --add app="^Preview$" manage=off
+yabai -m rule --add app="^Python$" manage=off
+yabai -m rule --add app="^BibDesk$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
 
 echo "yabai configuration loaded"
