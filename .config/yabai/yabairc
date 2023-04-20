@@ -38,5 +38,6 @@ yabai -m rule --add app="^Preview$" manage=off
 yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="^BibDesk$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
+yabai -m rule --add app="^ColorSlurp$" manage=off
 
 echo "yabai configuration loaded"
