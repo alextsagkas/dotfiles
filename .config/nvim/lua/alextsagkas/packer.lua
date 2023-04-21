@@ -166,6 +166,19 @@ return packer.startup(function(use)
 	-- buffer delete
 	use("moll/vim-bbye")
 
+	-- UI for messages, cmdline and popup menu
+	use({
+		"folke/noice.nvim",
+		requires = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		},
+	})
+
 	-- automatically set up your configuration after cloning packer.nvim
 	if packer_bootstrap then
 		require("packer").sync()
