@@ -39,5 +39,8 @@ yabai -m rule --add app="^Python$" manage=off
 yabai -m rule --add app="^BibDesk$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^ColorSlurp$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Webex$" manage=off
+yabai -m rule --add app="^Cisco Webex Meetings$" manage=off
 
 echo "yabai configuration loaded"
