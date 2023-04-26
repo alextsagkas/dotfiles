@@ -27,6 +27,7 @@ nvimtree.setup({
 	},
 	filters = {
 		dotfiles = false,
+		exclude = { "node_modules" },
 	},
 	renderer = {
 		add_trailing = false,

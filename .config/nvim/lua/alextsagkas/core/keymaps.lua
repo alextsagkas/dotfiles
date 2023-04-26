@@ -92,5 +92,8 @@ keymap.set("n", "<leader>cl", ":set cursorline!<CR>")
 -- run a c file
 keymap.set("n", "<leader>rnc", ":!gcc % -o %< && ./%< <CR>")
 
+-- run a c file
+keymap.set("n", "<leader>rcp", ":!gcc % -o %< && ./%< <CR>")
+
 -- fold text
 vim.cmd([[nnoremap <leader><leader> za]])
