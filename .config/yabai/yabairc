@@ -24,24 +24,7 @@ yabai -m config mouse_action2 resize
 # when window is dropped in center of another window, swap them (on edges it will split it)
 yabai -m mouse_drop_action swap
 
-yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Calculator$" manage=off
-yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^TeX Live Utility$" manage=off
-yabai -m rule --add app="^App Store$" manage=off
-yabai -m rule --add app="^Messages$" manage=off
-yabai -m rule --add app="^Notes$" manage=off
-yabai -m rule --add app="^Bartender 4$" manage=off
-yabai -m rule --add app="^Texpad$" manage=off
-yabai -m rule --add app="^Texifier$" manage=off
-yabai -m rule --add app="^Preview$" manage=off
-yabai -m rule --add app="^Python$" manage=off
-yabai -m rule --add app="^BibDesk$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
-yabai -m rule --add app="^ColorSlurp$" manage=off
-yabai -m rule --add app="^Activity Monitor$" manage=off
-yabai -m rule --add app="^Webex$" manage=off
-yabai -m rule --add app="^Cisco Webex Meetings$" manage=off
-yabai -m rule --add app="^octave-gui$" manage=off
+# In which apps should yabai be enabled
+yabai -m rule --add app!="^(Safari|Alacritty)$" manage=off
 
 echo "yabai configuration loaded"
