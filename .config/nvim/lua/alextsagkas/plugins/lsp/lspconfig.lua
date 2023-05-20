@@ -138,3 +138,20 @@ lspconfig["yamlls"].setup({
 	on_attach = on_attach,
 	filetypes = { "yaml" },
 })
+
+-- configure rust_hdl server
+local configs = require("lspconfig.configs")
+
+-- configure rust_hdl server
+if not configs.rust_hdl then
+	configs.rust_hdl = {
+		default_config = {
+			cmd = { "vhdl_ls" },
+			filetypes = { "vhdl" },
+			root_dir = function(fname)
+				return lspconfig.util.root_pattern("vhdl_ls.toml")(fname)
+			end,
+			settings = {},
+		},
+	}
+end

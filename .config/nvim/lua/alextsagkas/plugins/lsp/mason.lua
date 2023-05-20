@@ -61,6 +61,7 @@ mason_null_ls.setup({
 		"cpplint", -- c, c++ linter
 		"yamllint",
 		"yamlfmt",
+		"emacs_vhdl_mode",
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
