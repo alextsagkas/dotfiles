@@ -59,7 +59,7 @@ return packer.startup(function(use)
 	use("nvim-lualine/lualine.nvim")
 
 	-- file explorer
-	use("nvim-tree/nvim-tree.lua")
+	use({ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } })
 
 	-- telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- better sorting performance

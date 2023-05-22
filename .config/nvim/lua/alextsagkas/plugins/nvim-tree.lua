@@ -68,36 +68,12 @@ local function on_attach(bufnr)
 	vim.keymap.set("n", "<2-RightMouse>", api.tree.change_root_to_node, opts("CD"))
 	-- END_DEFAULT_ON_ATTACH
 
-	-- Mappings removed via:
-	--   remove_keymaps
-	--   OR
-	--   view.mappings.list..action = ""
-	--
-	-- The dummy set before del is done for safety, in case a default mapping does not exist.
-	--
-	-- You might tidy things by removing these along with their default mapping.
-	vim.keymap.set("n", "O", "", { buffer = bufnr })
-	vim.keymap.del("n", "O", { buffer = bufnr })
-	vim.keymap.set("n", "<2-RightMouse>", "", { buffer = bufnr })
-	vim.keymap.del("n", "<2-RightMouse>", { buffer = bufnr })
-	vim.keymap.set("n", "D", "", { buffer = bufnr })
-	vim.keymap.del("n", "D", { buffer = bufnr })
-	vim.keymap.set("n", "E", "", { buffer = bufnr })
-	vim.keymap.del("n", "E", { buffer = bufnr })
-
 	-- Mappings migrated from view.mappings.list
 	--
 	-- You will need to insert "your code goes here" for any mappings with a custom action_cb
-	vim.keymap.set("n", "A", api.tree.expand_all, opts("Expand All"))
-	vim.keymap.set("n", "?", api.tree.toggle_help, opts("Help"))
-	vim.keymap.set("n", "C", api.tree.change_root_to_node, opts("CD"))
-	vim.keymap.set("n", "P", function()
-		local node = api.tree.get_node_under_cursor()
-		print(node.absolute_path)
-	end, opts("Print Node Path"))
+	vim.keymap.set("n", "u", api.tree.change_root_to_parent, opts("Up"))
 
-	vim.keymap.set("n", "Z", api.node.run.system, opts("Run System"))
-	-- My Keymaps
+	-- my keymaps
 	vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 	vim.keymap.set("n", "<leader>rt", ":NvimTreeRefresh<CR>")
 end
