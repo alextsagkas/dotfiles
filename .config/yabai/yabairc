@@ -25,6 +25,6 @@ yabai -m config mouse_action2 resize
 yabai -m mouse_drop_action swap
 
 # In which apps should yabai be enabled
-yabai -m rule --add app!="^(Safari|Alacritty|Visual Studio Code)$" manage=off
+yabai -m rule --add app!="^(Alacritty)$" manage=off
 
 echo "yabai configuration loaded"
