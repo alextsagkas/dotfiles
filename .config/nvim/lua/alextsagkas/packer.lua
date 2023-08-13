@@ -141,15 +141,15 @@ return packer.startup(function(use)
 	-- latex support
 	use("lervag/vimtex")
 
-	-- markdown preview
-	use({
-		"iamcco/markdown-preview.nvim",
-		run = "cd app && npm install",
-		setup = function()
-			vim.g.mkdp_filetypes = { "markdown" }
-		end,
-		ft = { "markdown" },
-	})
+	-- -- markdown preview
+	-- use({
+	-- 	"iamcco/markdown-preview.nvim",
+	-- 	run = "cd app && npm install",
+	-- 	setup = function()
+	-- 		vim.g.mkdp_filetypes = { "markdown" }
+	-- 	end,
+	-- 	ft = { "markdown" },
+	-- })
 
 	-- zen mode
 	use("folke/zen-mode.nvim")
