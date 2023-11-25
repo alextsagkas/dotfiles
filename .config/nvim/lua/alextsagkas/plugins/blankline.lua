@@ -1,9 +1,7 @@
-local status, blankline = pcall(require, "indent_blankline")
+local status, blankline = pcall(require, "ibl")
 if not status then
 	print("indent_blankline is not downloaded")
 	return
 end
 
-blankline.setup({
-	show_current_context = true,
-})
+blankline.setup({})
