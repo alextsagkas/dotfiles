@@ -16,11 +16,11 @@ vim.cmd([[autocmd BufWritePre * %s/\s\+$//e]])
 -- for conciseness
 local opt = vim.opt
 
--- cursor line
-vim.api.nvim_command("set cursorline")
-vim.cmd("highlight Cursorline guibg='#1a1e24'")
-vim.cmd("autocmd InsertEnter * highlight Cursorline guibg=NONE")
-vim.cmd("autocmd InsertLeave * highlight Cursorline guibg='#1a1e24'")
+-- cursor line tricks while in transparent background
+-- vim.api.nvim_command("set cursorline")
+-- vim.cmd("highlight Cursorline guibg='#1a1e24'")
+-- vim.cmd("autocmd InsertEnter * highlight Cursorline guibg=NONE")
+-- vim.cmd("autocmd InsertLeave * highlight Cursorline guibg='#1a1e24'")
 
 -- cursor
 opt.guicursor = "i-ci:ver30-iCursor-blinkwait300-blinkon200-blinkoff150"

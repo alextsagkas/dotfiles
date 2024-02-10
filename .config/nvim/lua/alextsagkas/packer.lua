@@ -38,7 +38,8 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 
 	-- colorscheme
-	use({ "catppuccin/nvim", as = "catppuccin" })
+	-- use({ "catppuccin/nvim", as = "catppuccin" })
+	use("folke/tokyonight.nvim")
 
 	-- tmux and split window navigation
 	use("christoomey/vim-tmux-navigator")

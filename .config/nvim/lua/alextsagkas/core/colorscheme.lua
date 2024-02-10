@@ -1,13 +1,11 @@
-local status, color = pcall(require, "catppuccin")
+local status, color = pcall(require, "tokyonight")
 if not status then
 	print("Colorscheme is not found")
 	return
 end
 
 color.setup({
-	flavour = "mocha",
-	term_colors = true,
-	transparent_background = true,
+	style = "night",
 })
 
-vim.cmd.colorscheme("catppuccin")
+vim.cmd.colorscheme("tokyonight")
