@@ -47,6 +47,12 @@ bufferline.setup({
 	},
 
 	highlights = {
+
+		fill = {
+			fg = "#232326",
+			bg = "#232326",
+		},
+
 		buffer_selected = {
 			fg = "#85ADF0",
 			bold = true,
