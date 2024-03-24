@@ -43,3 +43,6 @@
 !.config/yabai/
 !.config/yabai/**
 .config/yabai/**/.DS_Store
+
+# zsh
+!.zshrc
