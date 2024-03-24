@@ -44,6 +44,10 @@ bufferline.setup({
 		separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
 		enforce_regular_tabs = true,
 		always_show_bufferline = true,
+		indicator = {
+			-- icon = "▎", -- this should be omitted if indicator style is not 'icon'
+			style = "none", -- "icon" | "underline" |
+		},
 	},
 
 	highlights = {
