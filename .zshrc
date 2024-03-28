@@ -48,3 +48,6 @@ eval "$(gh copilot alias -- zsh)"
 
 # Zoxide
 eval "$(zoxide init zsh)"
+
+# Vim
+set -o vi
