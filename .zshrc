@@ -43,7 +43,6 @@ alias ll="eza -alh"
 alias tree="eza --tree"
 alias cat="bat"
 alias cd="z"
-alias ipython='python3 -m IPython'
 alias open_ports="sudo lsof -i -P -n | grep LISTEN"
 eval "$(gh copilot alias -- zsh)"
 
