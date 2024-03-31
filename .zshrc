@@ -34,9 +34,6 @@ fi
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 # Aliases
 alias ls="eza"
 alias ll="eza -alh"
@@ -51,3 +48,4 @@ eval "$(zoxide init zsh)"
 
 # Vim
 set -o vi
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
