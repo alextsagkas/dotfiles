@@ -33,6 +33,9 @@ fi
 
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
 
 # Aliases
 alias ls="eza"
@@ -48,4 +51,3 @@ eval "$(zoxide init zsh)"
 
 # Vim
 set -o vi
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
