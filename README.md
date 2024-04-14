@@ -15,7 +15,7 @@ First, check out the dotfiles repository in your `$HOME` directory:
 
 ```bash
 $ cd ~
-$ git clone ...
+$ git clone git@github.com:alextsagkas/Dot-Files.git
 $ cd dotfiles
 ```
 
@@ -25,7 +25,7 @@ Then use gnu stow to create symblinks:
 $ stow .
 ```
 
-The files that are ingored by deafult from stow are the following:
+The files that are ingored by deafult from `stow` are the following:
 
 ```text
 # Comments and blank lines are allowed.
@@ -54,4 +54,4 @@ _darcs
 ```
 
 To override those create a `.stow-global-ignore` file in
-`.dotfiles/`.
+`dotfiles/`.
