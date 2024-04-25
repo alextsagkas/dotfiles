@@ -25,6 +25,7 @@ null_ls.setup({
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
 		formatting.autopep8, -- python formatter
+		formatting.checkstyle, -- java formatter
 		formatting.clang_format, -- c, c++ formatter
 		diagnostics.cpplint.with({ -- c, c++ linter
 			args = { "--filter='-legal/copyright'", "--filter='-readability/casting'" },

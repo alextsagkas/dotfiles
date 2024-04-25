@@ -139,6 +139,12 @@ lspconfig["yamlls"].setup({
 	filetypes = { "yaml" },
 })
 
+-- configure java server
+lspconfig["jdtls"].setup({
+	on_attach = on_attach,
+	filetypes = { "java" },
+})
+
 -- configure rust_hdl server
 local configs = require("lspconfig.configs")
 
