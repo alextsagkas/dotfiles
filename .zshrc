@@ -32,11 +32,17 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 fi
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
-export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+if [[ -z "${BREW_SHELLENV_RUN}" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
+  export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+  export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+  export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
+  export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
+
+  # Set the guard variable
+  export BREW_SHELLENV_RUN=1
+fi
 
 # Aliases
 alias ls="eza"
