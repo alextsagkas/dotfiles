@@ -37,7 +37,6 @@ if [[ -z "${BREW_SHELLENV_RUN}" ]]; then
 
   export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
   export PATH="/opt/homebrew/opt/curl/bin:$PATH"
-  export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
   export PATH="/opt/homebrew/opt/binutils/bin:$PATH"
 
   # Set the guard variable
