@@ -1,0 +1,31 @@
+[user]
+	name = Alexandros Tsagkaropoulos
+	email = alextsagkas2001@gmail.com
+	signingkey = DA30C1EA1FBFF214
+[alias]
+  sd = "!git status; git --no-pager diff --stat"
+  lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
+  lg = lg1
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+[column]
+	ui = auto
+[init]
+	defaultBranch = master
+[core]
+	editor = vim
+	excludesfile = /Users/alextsagkas/.gitignore_global
+	autocrlf = input
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
