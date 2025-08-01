@@ -29,3 +29,7 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+[diff]
+  submodule = log
+[status]
+  submodulesummary = 1
