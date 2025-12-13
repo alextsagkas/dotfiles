@@ -1,0 +1,198 @@
+[
+  // Standard macOS bindings
+  {
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-j": "menu::SelectNext",
+      "ctrl-k": "menu::SelectPrevious",
+      "enter": "menu::Confirm",
+      "ctrl-a m": "workspace::ToggleZoom",
+      "ctrl-a K": "vim::ResizePaneUp",
+      "ctrl-a J": "vim::ResizePaneDown",
+      "f7": "debugger::StepInto",
+      "f8": "debugger::StepOver",
+      "shift-f8": "debugger::StepOut",
+    },
+  },
+  {
+    "context": "Pane",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-a -": "pane::SplitDown",
+      "ctrl-a |": "pane::SplitRight",
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4],
+      "cmd-6": ["pane::ActivateItem", 5],
+      "cmd-7": ["pane::ActivateItem", 6],
+      "cmd-8": ["pane::ActivateItem", 7],
+      "cmd-9": ["pane::ActivateItem", 8],
+    },
+  },
+  // Vim
+  {
+    "context": "VimControl || !Editor && !Terminal",
+    "bindings": {
+      // window related commands (ctrl-w X)
+      "cmd-alt-h": "pane::ActivatePreviousItem",
+      "cmd-alt-l": "pane::ActivateNextItem",
+      "ctrl-w shift-l": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" },
+      ],
+      "ctrl-w shift-h": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" },
+      ],
+      "ctrl-w shift-j": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" },
+      ],
+      "ctrl-w shift-k": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" },
+      ],
+    },
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      // control code completion or action panels with vim motions
+      "ctrl-j": "editor::ContextMenuNext",
+      "ctrl-k": "editor::ContextMenuPrevious",
+    },
+  },
+  {
+    "bindings": {
+      "cmd-+": null,
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-cmd-=": [
+        "zed::IncreaseUiFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-cmd--": [
+        "zed::DecreaseUiFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-cmd-0": [
+        "zed::ResetUiFontSize",
+        {
+          "persist": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-a alt--": "pane::SplitAndMoveDown",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-a alt-|": "pane::SplitAndMoveRight",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-cmd-shift-h": "pane::SwapItemLeft",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "alt-cmd-shift-l": "pane::SwapItemRight",
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-left": null,
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-up": null,
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-down": null,
+    },
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-right": null,
+    },
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+      "bindings": {
+      "] n": "vim::SelectNextSyntaxNode",
+    },
+  },
+  {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+      "bindings": {
+      "[ n": "vim::SelectPreviousSyntaxNode",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-=": "pane::GoForward",
+    },
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-_": null,
+    },
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-a k": "workspace::ActivatePaneUp"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-a j": "workspace::ActivatePaneDown"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-a h": "workspace::ActivatePaneLeft"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-a l": "workspace::ActivatePaneRight"
+    }
+  }
+]
