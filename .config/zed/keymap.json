@@ -37,7 +37,23 @@
     "bindings": {
       // window related commands (ctrl-w X)
       "cmd-alt-h": "pane::ActivatePreviousItem",
-      "cmd-alt-l": "pane::ActivateNextItem"
+      "cmd-alt-l": "pane::ActivateNextItem",
+      "ctrl-w shift-l": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" }
+      ],
+      "ctrl-w shift-h": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" }
+      ],
+      "ctrl-w shift-j": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" }
+      ],
+      "ctrl-w shift-k": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" }
+      ]
     }
   },
   {
@@ -85,13 +101,13 @@
   },
   {
     "context": "Pane",
-      "bindings": {
+    "bindings": {
       "ctrl-a alt--": "pane::SplitAndMoveDown"
     }
   },
   {
     "context": "Pane",
-      "bindings": {
+    "bindings": {
       "ctrl-a alt-|": "pane::SplitAndMoveRight"
     }
   },
@@ -105,6 +121,30 @@
     "context": "Pane",
     "bindings": {
       "alt-cmd-shift-l": "pane::SwapItemRight"
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-left": null
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-up": null
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-down": null
+    }
+  },
+  {
+    "context": "((VimControl && !menu) || (!Editor && !Terminal))",
+    "bindings": {
+      "ctrl-w shift-right": null
     }
   }
 ]
