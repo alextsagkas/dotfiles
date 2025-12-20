@@ -146,5 +146,15 @@
     "bindings": {
       "ctrl-w shift-right": null
     }
+  },
+  {
+    "bindings": {
+      "] n": "vim::SelectNextSyntaxNode"
+    }
+  },
+  {
+    "bindings": {
+      "[ n": "vim::SelectPreviousSyntaxNode"
+    }
   }
 ]

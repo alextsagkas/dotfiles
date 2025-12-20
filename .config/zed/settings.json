@@ -7,6 +7,11 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "languages": {
+    "Make": {
+      "hard_tabs": true
+    }
+  },
   "extend_comment_on_newline": false,
   "zoomed_padding": false,
   "centered_layout": {
@@ -72,7 +77,7 @@
   "buffer_font_weight": 400.0,
   "preview_tabs": {
     "enabled": false,
-    "enable_preview_from_code_navigation": false,
+    "enable_keep_preview_on_code_navigation": false,
     "enable_preview_from_file_finder": false
   },
   "tabs": {
@@ -89,16 +94,17 @@
     "edit_prediction_provider": "copilot"
   },
   "agent": {
+    "default_profile": "ask",
     "default_width": 320.0,
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "gpt-5-mini"
     }
   },
   "edit_predictions": {
     "disabled_globs": [],
-    "mode": "eager",
+    "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
@@ -191,6 +197,11 @@
         {
           "paths": [
             "/home/atsagkar/documents/fractional-gpus/github-codebase"
+          ]
+        },
+        {
+          "paths": [
+            "/home/atsagkar/documents/gpu_vm_setup"
           ]
         },
         {
