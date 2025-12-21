@@ -156,5 +156,17 @@
     "bindings": {
       "[ n": "vim::SelectPreviousSyntaxNode"
     }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-=": "pane::GoForward"
+    }
+  },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-_": null
+    }
   }
 ]

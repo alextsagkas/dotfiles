@@ -7,6 +7,13 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "buffer_font_size": 11.0,
+  "buffer_line_height": {
+    "custom": 1.5
+  },
+  "active_pane_modifiers": {
+    "border_size": 0.0
+  },
   "languages": {
     "Make": {
       "hard_tabs": true
@@ -72,7 +79,7 @@
   "notification_panel": {
     "default_width": 320.0
   },
-  "agent_buffer_font_size": 12.0,
+  "agent_buffer_font_size": 11.0,
   "ui_font_weight": 400.0,
   "buffer_font_weight": 400.0,
   "preview_tabs": {
@@ -115,9 +122,8 @@
   "vim_mode": true,
   "base_keymap": "VSCode",
   "theme": "JetBrains Dark",
-  "ui_font_size": 14.0,
-  "buffer_font_size": 12.0,
-  "agent_ui_font_size": 14.0,
+  "ui_font_size": 12.0,
+  "agent_ui_font_size": 13.0,
   "ui_font_family": "Fira Mono",
   "buffer_font_family": "Fira Mono",
   "debugger": {
@@ -164,7 +170,7 @@
     "max_scroll_history_lines": 100000,
     "working_directory": "current_project_directory",
     "font_family": "MesloLGS NF",
-    "font_size": 12.0,
+    "font_size": 11.0,
     "default_height": 420,
     "detect_venv": "off"
   },
