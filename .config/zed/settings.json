@@ -101,6 +101,7 @@
     "edit_prediction_provider": "copilot"
   },
   "agent": {
+    "notify_when_agent_waiting": "never",
     "default_profile": "ask",
     "default_width": 320.0,
     "dock": "right",
