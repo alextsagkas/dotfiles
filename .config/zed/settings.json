@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "session": {
+    "trust_all_worktrees": true
+  },
   "buffer_font_size": 12.0,
   "buffer_line_height": {
     "custom": 1.5
@@ -138,13 +141,13 @@
     "show_branch_icon": true
   },
   "project_panel": {
-    "auto_fold_dirs": false,
+    "auto_fold_dirs": true,
     "file_icons": true,
     "entry_spacing": "standard",
     "default_width": 320,
-    "indent_size": 20,
+    "indent_size": 18.0,
     "indent_guides": {
-      "show": "never"
+      "show": "always"
     },
     "hide_root": true
   },
@@ -154,8 +157,9 @@
     "default_width": 320
   },
   "outline_panel": {
+    "indent_size": 18.0,
     "indent_guides": {
-      "show": "never"
+      "show": "always"
     },
     "default_width": 320.0,
     "button": false
