@@ -122,12 +122,12 @@
     },
     "enabled_in_text_threads": false
   },
-  "restore_on_startup": "none",
+  "restore_on_startup": "launchpad",
   "vim_mode": true,
   "base_keymap": "VSCode",
   "theme": "JetBrains Dark",
-  "ui_font_size": 12.0,
-  "agent_ui_font_size": 13.0,
+  "ui_font_size": 14.0,
+  "agent_ui_font_size": 14.0,
   "ui_font_family": "Fira Mono",
   "buffer_font_family": "Fira Mono",
   "debugger": {
@@ -152,6 +152,7 @@
     "hide_root": true
   },
   "git_panel": {
+    "tree_view": false,
     "status_style": "icon",
     "sort_by_path": false,
     "default_width": 320
@@ -175,7 +176,7 @@
     "max_scroll_history_lines": 100000,
     "working_directory": "current_project_directory",
     "font_family": "MesloLGS NF",
-    "font_size": 11.0,
+    "font_size": 12.0,
     "default_height": 420,
     "detect_venv": "off"
   },
@@ -244,6 +245,11 @@
         {
           "paths": [
             "/home/alextsagkas/documents"
+          ]
+        },
+        {
+          "paths": [
+            "/home/alextsagkas/documents/csp-client"
           ]
         },
         {
