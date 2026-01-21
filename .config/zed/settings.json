@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "relative_line_numbers": "disabled",
   "session": {
     "trust_all_worktrees": true
   },
@@ -70,6 +71,7 @@
   "hard_tabs": false,
   "colorize_brackets": true,
   "tab_bar": {
+    "show_pinned_tabs_in_separate_row": true,
     "show_tab_bar_buttons": false,
     "show_nav_history_buttons": false,
     "show": true
@@ -115,7 +117,7 @@
   },
   "edit_predictions": {
     "disabled_globs": [],
-    "mode": "eager",
+    "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
