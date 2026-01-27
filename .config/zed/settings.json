@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "buffer_font_family": "Fira Mono",
   "relative_line_numbers": "disabled",
   "session": {
     "trust_all_worktrees": true
@@ -86,7 +87,6 @@
   },
   "agent_buffer_font_size": 12.0,
   "ui_font_weight": 400.0,
-  "buffer_font_weight": 400.0,
   "preview_tabs": {
     "enabled": false,
     "enable_keep_preview_on_code_navigation": false,
@@ -131,7 +131,6 @@
   "ui_font_size": 14.0,
   "agent_ui_font_size": 14.0,
   "ui_font_family": "Fira Mono",
-  "buffer_font_family": "Fira Mono",
   "debugger": {
     "stepping_granularity": "line"
   },
@@ -256,7 +255,17 @@
         },
         {
           "paths": [
+            "/home/alextsagkas/documents/csputils"
+          ]
+        },
+        {
+          "paths": [
             "/home/alextsagkas/documents/libcsp"
+          ]
+        },
+        {
+          "paths": [
+            "/home/alextsagkas/documents/param_gen"
           ]
         },
         {
