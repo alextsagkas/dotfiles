@@ -7,6 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "diagnostics": {
+    "include_warnings": true,
+    "lsp_pull_diagnostics": {
+      "enabled": true
+    }
+  },
+  "telemetry": {
+    "diagnostics": true,
+    "metrics": true
+  },
+  "disable_ai": false,
   "buffer_font_family": "Fira Mono",
   "relative_line_numbers": "disabled",
   "session": {
@@ -24,7 +35,7 @@
       "hard_tabs": true
     }
   },
-  "extend_comment_on_newline": false,
+  "extend_comment_on_newline": true,
   "zoomed_padding": false,
   "centered_layout": {
     "left_padding": 0.2
@@ -41,6 +52,7 @@
   "bottom_dock_layout": "contained",
   "seed_search_query_from_cursor": "never",
   "inlay_hints": {
+    "enabled": true,
     "show_background": false
   },
   "always_treat_brackets_as_autoclosed": true,
@@ -188,6 +200,11 @@
       "projects": [
         {
           "paths": [
+            "/home/ermis3/alextsagkas/csp-client"
+          ]
+        },
+        {
+          "paths": [
             "/home/ermis3/alextsagkas/gscripts"
           ]
         },
@@ -318,6 +335,11 @@
         },
         {
           "paths": [
+            "/home/ubuntu/documents/cuda_wrapper"
+          ]
+        },
+        {
+          "paths": [
             "/home/ubuntu/documents/gpu-tlb"
           ]
         },
@@ -338,7 +360,17 @@
         },
         {
           "paths": [
+            "/home/ubuntu/documents/nvshare"
+          ]
+        },
+        {
+          "paths": [
             "/home/ubuntu/documents/open-gpu-doc"
+          ]
+        },
+        {
+          "paths": [
+            "/home/ubuntu/documents/rodinia-benchmarks"
           ]
         },
         {
