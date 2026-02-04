@@ -194,5 +194,10 @@
       "bindings": {
       "[ n": "editor::MoveToStartOfLargerSyntaxNode"
     }
+  },
+  {
+    "bindings": {
+      "alt-cmd-shift-i": "editor::FormatSelections"
+    }
   }
 ]
