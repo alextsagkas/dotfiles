@@ -130,13 +130,10 @@
     "regex": true
   },
   "show_edit_predictions": true,
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "agent": {
     "notify_when_agent_waiting": "never",
     "default_profile": "ask",
-    "default_width": 320.0,
+    "default_width": 380.0,
     "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
@@ -144,6 +141,7 @@
     }
   },
   "edit_predictions": {
+    "provider": "copilot",
     "disabled_globs": [],
     "mode": "subtle",
     "copilot": {
@@ -170,11 +168,11 @@
     "show_branch_icon": true
   },
   "project_panel": {
+    "default_width": 320.0,
     "auto_reveal_entries": false,
     "auto_fold_dirs": true,
     "file_icons": true,
     "entry_spacing": "standard",
-    "default_width": 320,
     "indent_size": 18.0,
     "indent_guides": {
       "show": "always"
