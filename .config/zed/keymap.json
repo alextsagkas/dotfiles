@@ -199,5 +199,73 @@
     "bindings": {
       "alt-cmd-shift-i": "editor::FormatSelections"
     }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "enter": "project_panel::Rename"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "shift-backspace": [
+        "project_panel::Trash",
+        {
+          "skip_prompt": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-shift-backspace": [
+        "project_panel::Trash",
+        {
+          "skip_prompt": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "delete": null
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "backspace": [
+        "project_panel::Delete",
+        {
+          "skip_prompt": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-delete": null
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "cmd-backspace": [
+        "project_panel::Delete",
+        {
+          "skip_prompt": true
+        }
+      ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-cmd-backspace": null
+    }
   }
 ]

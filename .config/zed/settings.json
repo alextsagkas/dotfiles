@@ -7,6 +7,8 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "use_system_prompts": false,
+  "confirm_quit": true,
   "status_bar": {
     "active_encoding_button": "enabled"
   },
@@ -87,7 +89,7 @@
   },
   "autoscroll_on_clicks": false,
   "redact_private_values": false,
-  "use_system_path_prompts": true,
+  "use_system_path_prompts": false,
   "file_finder": {
     "modal_max_width": "large",
     "include_ignored": "all"
@@ -158,7 +160,8 @@
   "agent_ui_font_size": 14.0,
   "ui_font_family": "Fira Mono",
   "debugger": {
-    "stepping_granularity": "line"
+    "stepping_granularity": "line",
+    "save_breakpoints": true
   },
   "file_scan_exclusions": [],
   "format_on_save": "off",
@@ -319,6 +322,11 @@
       "projects": [
         {
           "paths": [
+            "/home/ubuntu/documents/UVM_benchmark"
+          ]
+        },
+        {
+          "paths": [
             "/home/ubuntu/documents/code-samples"
           ]
         },
@@ -365,6 +373,11 @@
         {
           "paths": [
             "/home/ubuntu/documents/open-gpu-doc"
+          ]
+        },
+        {
+          "paths": [
+            "/home/ubuntu/documents/pytorch_benchmarks"
           ]
         },
         {
